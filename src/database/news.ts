@@ -10,7 +10,7 @@ const news: INews[] = [
       name: "Ashoka Tano",
       image:
         "https://i.etsystatic.com/7745761/r/il/2369e6/3663232312/il_1588xN.3663232312_dxif.jpg",
-      nickname: "Fulcrom",
+      nickname: "@Fulcrom",
       checked: true,
     },
     content: {
@@ -28,7 +28,7 @@ const news: INews[] = [
       name: "Anakin Skywalker",
       image:
         "https://i.pinimg.com/originals/83/ad/34/83ad34b9aa85b0bf3586ac9df771acdc.jpg",
-      nickname: "Vader19",
+      nickname: "@Vader19",
       checked: false,
     },
     content: {
@@ -46,8 +46,8 @@ const news: INews[] = [
       name: "Obi-Wan Kenobi",
       image:
         "https://bespinbulletin.com/wp-content/uploads/2022/05/img_1775-1.jpg",
-      nickname: "Ben1138",
-      checked: false,
+      nickname: "@Ben1138",
+      checked: true,
     },
     content: {
       description: "Do you like my new outfit??",
