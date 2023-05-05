@@ -8,15 +8,16 @@ const Card = (props: INews) => {
     author: { name, image, nickname, checked },
     content,
   } = props;
+
   return (
     <div className="d-flex flex-column mb-4 align-items-start">
       <div className="d-flex">
         <div>
-          <img src={image} height={60} width={60} alt="user-pic" />
+          <img className="border border-warning rounded-circle" style={{objectFit:"cover"}} src={image} height={60} width={60} alt="user-pic" />
         </div>
-        <div className="text-start">
+        <div className="text-start" style={{marginLeft:"1rem"}}>
           <p className="mb-0">
-            {name} {checked && <StarCheck />}
+            <b>{name}</b> {checked && <StarCheck />}
           </p>
           <p>{nickname}</p>
         </div>

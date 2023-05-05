@@ -2,7 +2,6 @@ import React from "react";
 import Feed from "./components/FeedOption/Feed";
 import Trend from "./components/Trend/Trend";
 import news from "./database/news";
-import { Profile } from "./components/Profile/Profile";
 import Card from "./components/Card/Card";
 
 function App() {
