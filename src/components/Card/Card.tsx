@@ -2,11 +2,12 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { INews } from "../../interface/news.interface";
 import { StarCheck } from "../StarCheck/StarCheck";
+import Social from "../social/Social";
 
 const Card = (props: INews) => {
   const {
     author: { name, image, nickname, checked },
-    content,
+    content, reply,liked,share
   } = props;
 
   return (
@@ -30,11 +31,8 @@ const Card = (props: INews) => {
         />
         <div className="card-body">
           <p className="card-text">{content.description}</p>
-          <hr className="dropdown-divider" />
-          <div className="d-flex">
-           
-          </div>
         </div>
+        <Social reply={reply} like={liked} share={share}/>
       </div>
     </div>
   );
