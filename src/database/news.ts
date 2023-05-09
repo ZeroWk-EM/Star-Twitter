@@ -1,13 +1,13 @@
 import { INews } from "../interface/news.interface";
 import { v4 as uuidv4 } from "uuid";
 
-const baseURL = "https:localhost:3000/";
+const baseURL = "https:localhost:3000";
 
 const news: INews[] = [
   {
     id: uuidv4(),
     author: {
-      name: "Ashoka Tano",
+      name: "Ahsoka Tano",
       image:
         "https://i.etsystatic.com/7745761/r/il/2369e6/3663232312/il_1588xN.3663232312_dxif.jpg",
       nickname: "@Fulcrom",
@@ -57,7 +57,7 @@ const news: INews[] = [
 
     reply: 2,
     liked: 80,
-    share: `${baseURL}/${uuidv4}`,
+    share: `${baseURL}/${uuidv4()}`,
   },
 ];
 
