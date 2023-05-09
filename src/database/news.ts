@@ -1,7 +1,7 @@
 import { INews } from "../interface/news.interface";
 import { v4 as uuidv4 } from "uuid";
 
-const baseURL = "https:localhost:3000";
+const baseURL = "https://localhost:3000";
 
 const news: INews[] = [
   {
