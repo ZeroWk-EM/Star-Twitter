@@ -7,16 +7,26 @@ import Social from "../social/Social";
 const Card = (props: INews) => {
   const {
     author: { name, image, nickname, checked },
-    content, reply,liked,share
+    content,
+    reply,
+    liked,
+    share,
   } = props;
 
   return (
     <div className="d-flex flex-column mb-4 align-items-start">
       <div className="d-flex">
         <div>
-          <img className="border border-warning rounded-circle" style={{objectFit:"cover"}} src={image} height={60} width={60} alt="user-pic" />
+          <img
+            className="border border-warning rounded-circle"
+            style={{ objectFit: "cover" }}
+            src={image}
+            height={60}
+            width={60}
+            alt="user-pic"
+          />
         </div>
-        <div className="text-start" style={{marginLeft:"1rem"}}>
+        <div className="text-start" style={{ marginLeft: "1rem" }}>
           <p className="mb-0">
             <b>{name}</b> {checked && <StarCheck />}
           </p>
@@ -32,7 +42,7 @@ const Card = (props: INews) => {
         <div className="card-body">
           <p className="card-text">{content.description}</p>
         </div>
-        <Social reply={reply} like={liked} share={share}/>
+        <Social name={name} reply={reply} like={liked} share={share} />
       </div>
     </div>
   );
